@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinkedLists.Classes
 {
-    class LList
+    public class LList
     {
         /// <summary>
 		///		Always points to the first node in the LL
@@ -106,6 +106,13 @@ namespace LinkedLists.Classes
             }
         }
 
+        /// <summary>
+        /// inserts a node into the list after a given node
+        /// time: O(n)
+        /// space: O(1)
+        /// </summary>
+        /// <param name="newNode">the node to be added</param>
+        /// <param name="existingNode">the node that will precede</param>
         public void AddAfter(Node newNode, Node existingNode)
         {
             Current = Head;
