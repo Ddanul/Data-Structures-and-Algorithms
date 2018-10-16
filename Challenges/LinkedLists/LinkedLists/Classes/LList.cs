@@ -105,5 +105,27 @@ namespace LinkedLists.Classes
                 Current = Current.Next;
             }
         }
+
+        public void AddAfter(Node newNode, Node existingNode)
+        {
+            Current = Head;
+            if (Head.Value == existingNode.Value)
+            {
+                newNode.Next = Head.Next;
+                Head.Next = newNode;
+                return;
+            }
+
+            while (Current.Value != null)
+            {
+                if (Current.Value == existingNode.Value)
+                {
+                    newNode.Next = Current.Next;
+                    Current.Next = newNode;
+                    return;
+                }
+                Current = Current.Next;
+            }
+        }
     }
 }
