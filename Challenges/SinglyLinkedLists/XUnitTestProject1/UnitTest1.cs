@@ -5,6 +5,9 @@ using SinglyLinkedLists;
 
 namespace XUnitTestProject1
 {
+    /// <summary>
+    /// Testing to ensure proper value is returned from method.
+    /// </summary>
     public class UnitTest1
     {
         [Theory]
