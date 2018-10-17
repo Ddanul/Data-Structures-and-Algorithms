@@ -4,12 +4,14 @@
 
 1. [Challenge: Reverse an array](#)
 
-2. [Challenge: Insert and shift an array](#)
+2. [Challenge: Insert and shift an array](https://github.com/Ddanul/Data-Structures-and-Algorithms/tree/master/Challenges/arrayShift)
 
-3. [Challenge: Array Binary Search](#)
+3. [Challenge: Array Binary Search](https://github.com/Ddanul/Data-Structures-and-Algorithms/tree/master/Challenges/binarySearch)
 
-4. [Implementation: Linked List](#)
+4. [Challenge: Fibonacci Sequence](https://github.com/Ddanul/Data-Structures-and-Algorithms/tree/master/Challenges/fibonacciSeries)
 
-5. [Challenge 5](#)
+5. [Implementation: Linked List](https://github.com/Ddanul/Data-Structures-and-Algorithms/tree/master/Challenges/SinglyLinkedLists)
 
 6. [Challenge 6](#)
+
+7. [Challenge 7](#)
