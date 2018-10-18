@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseLinkList", "ReverseLinkList\ReverseLinkList.csproj", "{703EA56F-0FD4-4968-A590-14169031B551}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{C82C9ED4-7F8E-49BB-B373-01DD5B2B52B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{703EA56F-0FD4-4968-A590-14169031B551}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{703EA56F-0FD4-4968-A590-14169031B551}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{703EA56F-0FD4-4968-A590-14169031B551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C82C9ED4-7F8E-49BB-B373-01DD5B2B52B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C82C9ED4-7F8E-49BB-B373-01DD5B2B52B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C82C9ED4-7F8E-49BB-B373-01DD5B2B52B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C82C9ED4-7F8E-49BB-B373-01DD5B2B52B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
