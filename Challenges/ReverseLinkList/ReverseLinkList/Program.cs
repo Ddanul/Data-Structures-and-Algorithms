@@ -3,7 +3,7 @@ using LinkedLists.Classes;
 
 namespace ReverseLinkList
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -29,6 +29,11 @@ namespace ReverseLinkList
             
         }
 
+        /// <summary>
+        /// returns a string conatining the values of the nodes in the linked list
+        /// </summary>
+        /// <param name="list">linked list</param>
+        /// <returns>string of values in linked list</returns>
         public static string Print(LList list)
         {
             string returnPrint = "";
@@ -43,6 +48,11 @@ namespace ReverseLinkList
             return returnPrint;
         }
 
+        /// <summary>
+        /// Reverses the linked list that is entered.
+        /// </summary>
+        /// <param name="list">linked list</param>
+        /// <returns>reversed linked list</returns>
         public static LList Reverse(LList list)
         {
             list.Current = list.Head.Next;
@@ -73,6 +83,11 @@ namespace ReverseLinkList
             list.Head = tail;
 
             return list;
+        }
+
+        public static bool IsPalindrome(LList list)
+        {
+
         }
     }
 }
