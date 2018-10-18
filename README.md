@@ -12,6 +12,6 @@
 
 5. [Implementation: Linked List](https://github.com/Ddanul/Data-Structures-and-Algorithms/tree/master/Challenges/SinglyLinkedLists)
 
-6. [Challenge 6](#)
+6. [Challenge: Merge Linked Lists](https://github.com/Ddanul/Data-Structures-and-Algorithms/tree/master/Challenges/MergeList)
 
 7. [Challenge 7](#)
