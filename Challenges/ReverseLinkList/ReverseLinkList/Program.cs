@@ -84,10 +84,5 @@ namespace ReverseLinkList
 
             return list;
         }
-
-        public static bool IsPalindrome(LList list)
-        {
-
-        }
     }
 }
