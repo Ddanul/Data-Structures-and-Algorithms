@@ -16,7 +16,6 @@ namespace QueueWithStacks
             Node n1 = new Node(1);
             Node n2 = new Node(2);
             Node n3 = new Node(3);
-            Node n4 = new Node(4);
 
             Queue myQ = new Queue(n1);
             myQ.Enqueue(n2);

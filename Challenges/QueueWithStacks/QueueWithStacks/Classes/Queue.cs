@@ -4,7 +4,7 @@ using System.Text;
 
 namespace QueueWithStacks.Classes
 {
-    class Queue
+    public class Queue
     {
         public Stack s1 = new Stack();
         public Stack s2 = new Stack();
