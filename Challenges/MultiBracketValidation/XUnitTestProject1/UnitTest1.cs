@@ -12,6 +12,7 @@ namespace XUnitTestProject1
         [InlineData("{(abc}", false)]
         [InlineData("}{", false)]
         [InlineData("", true)]
+        [InlineData("{()", false)]
         public void TestToCheckBalancedBrackets(string input, bool expected)
         {
             //Assert

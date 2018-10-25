@@ -59,7 +59,14 @@ namespace MultiBracketValidation
                     }
                 }
             }
-            return true;
+            if (openBrackets.Top == null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
