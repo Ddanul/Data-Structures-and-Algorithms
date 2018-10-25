@@ -4,18 +4,24 @@ using MultiBracketValidation.Classes;
 
 namespace MultiBracketValidation
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             string test1 = "{abc}";
             string test2 = "{(abc}";
             string test3 = "}{";
-            Console.WriteLine($"The test is balanced: {MultiBracketValidation(test3)}");
+            string test4 = "";
+            Console.WriteLine($"The test is balanced: {MultiBracketValidation(test4)}");
         }
 
-        static bool MultiBracketValidation(string input)
+        /// <summary>
+        /// method checks to make sure brackets are balanced and equal.
+        /// </summary>
+        /// <param name="input">string containing brackets</param>
+        /// <returns>true or false</returns>
+        public static bool MultiBracketValidation(string input)
         {
             Stack openBrackets = new Stack();
             string openPattern = @"[{\[\(]";
