@@ -38,6 +38,7 @@ namespace Tree
             Node n8 = new Node(3);
             Node n9 = new Node(4);
             Node n10 = new Node(5);
+
             BinarySearchTree bst1 = new BinarySearchTree(n6);
         }
 
@@ -45,7 +46,7 @@ namespace Tree
         /// Prints out values in list
         /// </summary>
         /// <param name="values">list of integers</param>
-        static void Print(List<int> values)
+        public static void Print(List<int> values)
         {
             Console.WriteLine("=============");
             foreach(int value in values)
