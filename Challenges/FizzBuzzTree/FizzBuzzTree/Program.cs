@@ -4,7 +4,7 @@ using Tree.Classes;
 
 namespace FizzBuzzTree
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -19,41 +19,59 @@ namespace FizzBuzzTree
             bst.Root.Right = n3;
             bst.Root.Left.Left = n4;
 
-            FizzBuzzTree(bst.Root);
+            List<object> values = new List<object>();
+
+            FizzBuzzTree(bst.Root, values);
+
+            Print(values);
         }
 
-        static void FizzBuzzTree(Node node)
+        public static void FizzBuzzTree(Node node, List<object> values)
         {
             if(node == null)
             {
-                Console.WriteLine("Ain't nothin here");
+                Console.WriteLine("Ain't nothing here");
             }
             if(node.Left != null)
             {
-                FizzBuzzTree(node.Left);
+                FizzBuzzTree(node.Left, values);
             }
 
             if(node.Value % 15 == 0)
             {
                 Console.Write(" FizzBuzz ");
+                values.Add("FizzBuzz");
             }
             else if(node.Value % 3 == 0)
             {
                 Console.Write(" Fizz ");
+                values.Add("Fizz");
             }
             else if(node.Value % 5 == 0)
             {
                 Console.Write(" Buzz ");
+                values.Add("Buzz");
             }
             else
             {
                 Console.Write($"{node.Value}");
+                values.Add($"{node.Value}");
             }
 
             if (node.Right != null)
             {
-                FizzBuzzTree(node.Right);
+                FizzBuzzTree(node.Right, values);
             }
+        }
+
+        static void Print(List<object> values)
+        {
+            Console.WriteLine();
+            foreach(var value in values)
+            {
+                Console.WriteLine(value);
+            }
+            Console.WriteLine();
         }
     }
 }
