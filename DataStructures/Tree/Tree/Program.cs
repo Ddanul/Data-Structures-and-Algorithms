@@ -23,14 +23,28 @@ namespace Tree
             tree1.Root.Left.Right = n5;
 
             Print(tree1.PreOrder(tree1.Root));
+
+            tree1.searchValues.Clear();
+
+            Print(tree1.InOrder(tree1.Root));
+
+            tree1.searchValues.Clear();
+
+            Print(tree1.PostOrder(tree1.Root));
         }
 
+        /// <summary>
+        /// Prints out values in list
+        /// </summary>
+        /// <param name="values">list of integers</param>
         static void Print(List<int> values)
         {
+            Console.WriteLine("=============");
             foreach(int value in values)
             {
-                Console.Write($"{value}");
+                Console.Write($"{value} ");
             }
+            Console.WriteLine();
         }
     }
 }
