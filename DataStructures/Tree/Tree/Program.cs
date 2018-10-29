@@ -4,7 +4,7 @@ using Tree.Classes;
 
 namespace Tree
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -31,6 +31,14 @@ namespace Tree
             tree1.searchValues.Clear();
 
             Print(tree1.PostOrder(tree1.Root));
+
+
+            Node n6 = new Node(1);
+            Node n7 = new Node(2);
+            Node n8 = new Node(3);
+            Node n9 = new Node(4);
+            Node n10 = new Node(5);
+            BinarySearchTree bst1 = new BinarySearchTree(n6);
         }
 
         /// <summary>
