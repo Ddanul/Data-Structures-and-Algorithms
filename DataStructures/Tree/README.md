@@ -13,3 +13,9 @@ Binary Trees are trees that only contain nodes who’s value are numeric types. 
 
 ## Examples of Use
 1. Binary trees can be used for sorting and for mapping.
+
+## Approach and Efficiency
+
+* Pre-, Post-, and In- Traversal all have Time O(n) and Space of O(h) since all traverse Depth first.
+
+* Binary Search Tree for insertion and search is O(log n) since we are only looking at one side of the tree at a time.
