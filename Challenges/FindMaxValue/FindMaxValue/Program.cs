@@ -4,7 +4,7 @@ using Tree.Classes;
 
 namespace FindMaxValue
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -16,10 +16,10 @@ namespace FindMaxValue
             tree.Root.Left = n2;
             tree.Root.Right = n3;
 
-            Console.WriteLine(FindMaxValue(tree));
+            Console.WriteLine(FindMaximumValue(tree));
         }
 
-        static int FindMaxValue(BinaryTree tree)
+        public static int FindMaximumValue(BinaryTree tree)
         {
             List<int> listOfNodes = tree.PreOrder(tree.Root);
             int temp = tree.Root.Value;
