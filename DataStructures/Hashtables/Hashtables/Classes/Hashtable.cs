@@ -48,6 +48,12 @@ namespace Hashtables.Classes
             }
             return null;
         }
-    }
 
+        public bool Contains(string key)
+        {
+            return Find(key) != null;
+        }
+
+
+    }
 }
