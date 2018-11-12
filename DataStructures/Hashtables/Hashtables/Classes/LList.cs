@@ -68,14 +68,22 @@ namespace Hashtables.Classes
         /// <param name="newNode">the node to be added</param>
         public void Append(Node newNode)
         {
-            Current = Head;
-            while (Current.Next != null)
+            if (Head == null)
             {
-                Current = Current.Next;
+                Head = newNode;
+                Current = newNode;
             }
+            else
+            {
+                Current = Head;
+                while (Current.Next != null)
+                {
+                    Current = Current.Next;
+                }
 
-            Current.Next = newNode;
-            Current = Head;
+                Current.Next = newNode;
+                Current = Head;
+            }
         }
 
         /// <summary>

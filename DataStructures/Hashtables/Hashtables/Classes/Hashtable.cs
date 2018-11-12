@@ -27,33 +27,65 @@ namespace Hashtables.Classes
             return val;
         }
 
+        /// <summary>
+        /// Adds node into hashtable using hashed key index
+        /// </summary>
+        /// <param name="newNode"></param>
         public void Add(Node newNode)
         {
             int index = GetHash(newNode.Key);
-            hashtable[index].Append(newNode);
+            if (hashtable[index] == null)
+            {
+                LList newList = new LList(newNode);
+                hashtable[index] = newList;
+            }
+            else
+            {
+                hashtable[index].Append(newNode);
+            }
+            Console.WriteLine("Successfully Added");
         }
 
+        /// <summary>
+        /// Method that uses key to return value if it exists
+        /// </summary>
+        /// <param name="key">the key property of the node</param>
+        /// <returns>the value property of the node</returns>
         public string Find(string key)
         {
             int index = GetHash(key);
-            Node current = hashtable[index].Current;
-
-            while (current != null)
+            if (hashtable[index] == null)
             {
-                if (current.Key == key)
-                {
-                    return current.Value;
-                }
-                current = current.Next;
+                return null;
             }
-            return null;
+            else
+            {
+                Node current = hashtable[index].Current;
+
+                while (current != null)
+                {
+                    if (current.Key == key)
+                    {
+                        return current.Value;
+                    }
+                    current = current.Next;
+                }
+                return null;
+            }
         }
 
+        /// <summary>
+        /// Method to see if a node is located inside of hashtable
+        /// </summary>
+        /// <param name="key">kay property of a node</param>
+        /// <returns>True if node exists inside of hashtable or false if it does not</returns>
         public bool Contains(string key)
         {
-            return Find(key) != null;
+            if (Find(key) == null)
+            {
+                return false;
+            }
+            return true;
         }
-
-
     }
 }
