@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Hashtables.Classes
 {
-    class Node
+    public class Node
     {
         public string Key { get; set; }
         public string Value { get; set; }

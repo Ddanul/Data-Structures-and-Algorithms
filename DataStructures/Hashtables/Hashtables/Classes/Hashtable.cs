@@ -6,7 +6,7 @@ namespace Hashtables.Classes
 {
     public class Hashtable
     {
-        public object[] hashtable = new object[100];
+        public LList[] hashtable = new LList[100];
 
         /// <summary>
         /// returns integer used for index
@@ -31,6 +31,22 @@ namespace Hashtables.Classes
         {
             int index = GetHash(newNode.Key);
             hashtable[index].Append(newNode);
+        }
+
+        public string Find(string key)
+        {
+            int index = GetHash(key);
+            Node current = hashtable[index].Current;
+
+            while (current != null)
+            {
+                if (current.Key == key)
+                {
+                    return current.Value;
+                }
+                current = current.Next;
+            }
+            return null;
         }
     }
 
