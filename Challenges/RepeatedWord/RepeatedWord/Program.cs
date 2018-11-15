@@ -3,7 +3,7 @@ using System;
 
 namespace RepeatedWord
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -23,12 +23,12 @@ namespace RepeatedWord
             {
                 if (!hashtable.Contains(word))
                 {
-                    Node node = new Node(word, word);
+                    Node node = new Node(word.ToLower(), word.ToLower());
                     hashtable.Add(node);
                 }
                 else
                 {
-                    return word;
+                    return word.ToLower();
                 }
             }
             return "No Repeated Words.";
